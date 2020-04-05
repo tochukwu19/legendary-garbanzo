@@ -7,10 +7,26 @@ body {
     background-color: var(--dark);
 }
 
+html {
+    overflow-x: hidden;
+}
+
 :root {
     --blue: #01A0D9;
     --dark: #121212;
     --white: #FFFFFF
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--dark);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--white);
 }
 
 /* Navigation */
@@ -44,7 +60,7 @@ nav li {
 nav a {
     text-decoration: none;
     font-size: 18px;
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
     color: var(--textColor);
 
 }
@@ -58,13 +74,13 @@ nav a {
     background-image: linear-gradient(var(--blue), var(--blue));
     background-position: 0% 100%;
     background-repeat: no-repeat;
-    background-size: 0% 1px;
+    background-size: 0% 10px;
     transition: background-size .3s;
 }
 
 .menu a:hover,
 .menu a:focus {
-    background-size: 65% 5px;
+    background-size: 90% 10px;
 }
 
 
@@ -123,9 +139,8 @@ nav a {
 }
 
 .heroline {
-    position: fixed;
-    height: 1500px;
-    left: 450px;
+    position: absolute;
+    left: 250px;
     top: -70px;
     z-index: -1;
 }
@@ -137,14 +152,12 @@ nav a {
     background-repeat: no-repeat;
     background-size: 5% 1px;
     transition: background-size .3s;
-    padding: 10px;
-    z-index: 7;
 
 }
 
 .hero a:hover,
 .hero a:focus {
-    background-size: 65% 2px;
+    background-size: 65% 10px;
 }
 
 .hero-works {
@@ -152,7 +165,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     z-index: 1;
 
@@ -164,9 +177,253 @@ nav a {
     transition: ease-in-out .3s;
     position: relative;
     top: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .hero-works img:hover {
     position: relative;
     top: -10px;
+}
+
+.sample-works {
+    height: 300px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+}
+
+.samples {
+    height: inherit;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sample1 {
+    background-image: url("../Images/two-person-carrying-black-inflatable-pool-float-on-brown-1020016.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+
+}
+
+.sample1 p,
+.sample2 p,
+.sample3 p,
+.sample4 p,
+.sample5 p {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.sample1 a,
+.sample2 a,
+.sample3 a,
+.sample4 a,
+.sample5 a {
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    background-image: linear-gradient(var(--blue), var(--blue));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 10px;
+    transition: background-size .3s;
+}
+
+
+.sample1 a:hover,
+.sample1 a:focus,
+.sample2 a:hover,
+.sample2 a:focus,
+.sample3 a:hover,
+.sample3 a:focus,
+.sample4 a:hover,
+.sample4 a:focus,
+.sample5 a:hover,
+.sample5 a:focus {
+    background-size: 90% 10px;
+}
+
+
+.blue {
+    color: var(--blue);
+}
+
+.sample2 {
+    background-image: url("../Images/flying-white-drone-2100075.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+
+}
+
+.sample3 {
+    background-image: url("../Images/man-and-woman-kissing-948185.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+
+}
+
+.sample4 {
+    background-image: url("../Images/green-trees-under-blue-and-orange-sky-during-sunset-1107717.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+
+}
+
+.sample5 {
+    background-image: url("../Images/man-standing-while-singing-2067677.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+
+}
+
+
+/* About */
+
+.about {
+    height: 100vh;
+    width: 100%;
+    color: #121212;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.about-left {
+    width: 40%;
+}
+
+.about-right {
+    width: 40%;
+}
+
+.content-container{
+    display: none;
+}
+
+.about-left img {
+    height: 300px;
+    max-width: 100%;
+}
+
+.about h2,
+.about h1 {
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+.about-right span {
+    -webkit-text-fill-color: var(--blue);
+}
+
+.about-right span:hover {
+    -webkit-text-stroke: 0.5px #000;
+    -webkit-text-fill-color: #fff;
+    cursor: pointer;
+}
+
+.panel-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.panel-list a {
+    margin-left: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(var(--blue), var(--blue));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 10px;
+    transition: background-size .3s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.panel-list a:hover {
+    background-size: 90% 10px;
+}
+
+.about-right p {
+    font-weight: bold;
+}
+
+.about h1 {
+    font-size: 35px;
+}
+
+.yes-display{
+    display: block !important;
+}
+
+.no-display{
+    display: none !important;
+}
+
+.active1{
+        background-size: 90% 10px !important;
+}
+
+.socials-container img{
+    height: 50px;
+}
+
+.socials-container{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-gap: 10px;
+}
+
+.aboutC{
+    height: 300px;
 }

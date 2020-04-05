@@ -1,0 +1,172 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand',
+        sans-serif;
+    color: var(--white);
+    background-color: var(--dark);
+}
+
+:root {
+    --blue: #01A0D9;
+    --dark: #121212;
+    --white: #FFFFFF
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: var(--color1);
+    color: var(--textColor);
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 37px;
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+.logo-j {
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-fill-color: var(--dark);
+    position: relative;
+    top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    color: var(--textColor);
+
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    background-image: linear-gradient(var(--blue), var(--blue));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
+}
+
+.menu a:hover,
+.menu a:focus {
+    background-size: 65% 5px;
+}
+
+
+
+
+
+/* Hero */
+.hero {
+    height: 593px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1,
+.hero p {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+}
+
+.hero h1 {
+    margin: 0;
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-fill-color: var(--dark);
+    cursor: pointer;
+}
+
+.span1:hover {
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 0px;
+    position: relative;
+    top: -5px;
+
+}
+
+.span2:hover {
+    -webkit-text-fill-color: var(--blue) !important;
+    -webkit-text-stroke: 0px;
+    position: relative;
+    top: -5px;
+
+}
+
+.hero p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.hero a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.heroline {
+    position: fixed;
+    height: 1500px;
+    left: 450px;
+    top: -70px;
+    z-index: -1;
+}
+
+.hero a {
+    text-decoration: none;
+    background-image: linear-gradient(var(--blue), var(--blue));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 5% 1px;
+    transition: background-size .3s;
+    padding: 10px;
+    z-index: 7;
+
+}
+
+.hero a:hover,
+.hero a:focus {
+    background-size: 65% 2px;
+}
+
+.hero-works {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+
+}
+
+.hero-works img {
+    height: 180px;
+    width: 225px;
+    transition: ease-in-out .3s;
+    position: relative;
+    top: 0px;
+}
+
+.hero-works img:hover {
+    position: relative;
+    top: -10px;
+}

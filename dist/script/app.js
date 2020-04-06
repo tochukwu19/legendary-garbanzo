@@ -30,22 +30,26 @@ function panelList2Fn() {
 }
 
 const preloader = document.querySelector('.preloader');
-const fadeEffect = setInterval(() => {
-    // if we don't set opacity 1 in CSS, then
-    // it will be equaled to "" -- that's why
-    // we check it, and if so, set opacity to 1
-    if (!preloader.style.opacity) {
-        preloader.style.opacity = 1;
-    }
-    if (preloader.style.opacity > 0) {
-        preloader.style.opacity -= 0.1;
-    } else {
-        clearInterval(fadeEffect);
-    }
-}, 600);
+
+const fadeout = e => {
+    preloader.classList.add("fadeout")
+}
+// const fadeEffect = setInterval(() => {
+//     // if we don't set opacity 1 in CSS, then
+//     // it will be equaled to "" -- that's why
+//     // we check it, and if so, set opacity to 1
+//     if (!preloader.style.opacity) {
+//         preloader.style.opacity = 1;
+//     }
+//     if (preloader.style.opacity > 0) {
+//         preloader.style.opacity -= 0.1;
+//     } else {
+//         clearInterval(fadeEffect);
+//     }
+// }, 600);
 
 
-window.addEventListener('load', fadeEffect);
+// window.addEventListener('load', fadeout);
 
 panelList3.addEventListener("click", panelList3Fn)
 

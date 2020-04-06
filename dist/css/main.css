@@ -9,6 +9,7 @@ body {
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -26,9 +27,13 @@ html {
     left: 0;
     position: fixed;
     top: 0;
-    transition: opacity 0.3s linear;
+    transition: all 3s linear;
     width: 100%;
     z-index: 9999;
+}
+
+.fadeout {
+    opacity: 0;
 }
 
 body::-webkit-scrollbar {
@@ -103,7 +108,7 @@ nav a {
 
 /* Hero */
 .hero {
-    height: 593px;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,7 +366,7 @@ nav a {
     width: 40%;
 }
 
-.content-container{
+.content-container {
     display: none;
 }
 
@@ -416,28 +421,107 @@ nav a {
     font-size: 35px;
 }
 
-.yes-display{
+.yes-display {
     display: block !important;
 }
 
-.no-display{
+.no-display {
     display: none !important;
 }
 
-.active1{
-        background-size: 90% 10px !important;
+.active1 {
+    background-size: 90% 10px !important;
 }
 
-.socials-container img{
+.socials-container img {
     height: 50px;
 }
 
-.socials-container{
+.socials-container {
     display: grid;
     grid-template-columns: 50px 50px;
     grid-gap: 10px;
 }
 
-.aboutC{
+.aboutC {
     height: 300px;
+}
+
+
+
+/* Clients */
+
+.clients{
+    background-color: var(--dark);
+    width: 100%;
+    height: 100vh;
+}
+
+.client-container{
+    height: inherit;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.client-container h1{
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 40px;
+}
+
+.cb{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.ca{
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.ca:hover{
+    -webkit-text-stroke: 0px;
+    -webkit-text-fill-color: var(--blue);
+    cursor: pointer;
+}
+
+.cd{
+    -webkit-text-stroke: 0px;
+    -webkit-text-fill-color: var(--blue);
+    cursor: pointer;
+}
+
+.cd:hover{
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.clients img{
+    height: 80px;
+}
+
+
+/* works */
+
+.works{
+    background-color: var(--dark);
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: auto;
+}
+
+.works img{
+    height: 100%;
+    width: 100%;
 }

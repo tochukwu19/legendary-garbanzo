@@ -18,6 +18,21 @@ html {
     --white: #FFFFFF
 }
 
+.hamburger {
+    padding: 30px;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+
+.ham {
+    background-color: #fff;
+    width: 30px;
+    height: 1px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
 .preloader {
     align-items: center;
     background: rgb(23, 22, 22);
@@ -451,13 +466,13 @@ nav a {
 
 /* Clients */
 
-.clients{
+.clients {
     background-color: var(--dark);
     width: 100%;
     height: 100vh;
 }
 
-.client-container{
+.client-container {
     height: inherit;
     width: 80%;
     margin: auto;
@@ -468,60 +483,129 @@ nav a {
     text-align: center;
 }
 
-.client-container h1{
+.client-container h1 {
     font-family: 'Montserrat',
-    sans-serif;
+        sans-serif;
     font-size: 40px;
 }
 
-.cb{
+.cb {
     font-weight: bold;
     font-size: 22px;
 }
 
-.ca{
+.ca {
     -webkit-text-stroke: 0.5px white;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
 }
 
-.ca:hover{
+.ca:hover {
     -webkit-text-stroke: 0px;
     -webkit-text-fill-color: var(--blue);
     cursor: pointer;
 }
 
-.cd{
+.cd {
     -webkit-text-stroke: 0px;
     -webkit-text-fill-color: var(--blue);
     cursor: pointer;
 }
 
-.cd:hover{
+.cd:hover {
     -webkit-text-stroke: 0.5px white;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
 }
 
-.clients img{
+.clients img {
     height: 80px;
 }
 
 
 /* works */
 
-.works{
+.works {
     background-color: var(--dark);
     color: #fff;
     width: 100%;
     height: 100vh;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: auto;
 }
 
-.works img{
+.works img {
     height: 100%;
     width: 100%;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+    .hero-container{
+        text-align: center;
+        width: 100%;
+    }
+    .hero h1, .hero p{
+        font-size: 35px;
+    }
+    .hero br{
+        display: none;
+    }
+    .hero{
+        padding: 10px;
+        height: 400px;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about{
+        height: auto;
+    }
+    .about-left, .about-right{
+        width: 80%;
+    }
+
+    .about-left{
+        margin-bottom: 15px;
+    }
+
+    .about-right h2{
+        margin-top: 0px;
+    }
+    .clients{
+        height: auto;
+    }
+    .about h1{
+        font-size: 30px;
+    }
+    .about img{
+        border-radius: 100%;
+    }
+    .panel-list{
+        padding-left: 0px;
+    }
+    .aboutC{
+        margin-bottom: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .hero-works{
+        display: none;
+    }
+    .sample-works{
+        display: none;
+    }
 }

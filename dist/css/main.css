@@ -564,7 +564,7 @@ nav a {
     }
     .hero{
         padding: 10px;
-        height: 400px;
+        height: 89vh;
     }
     .about-container{
         flex-direction: column;
@@ -588,9 +588,6 @@ nav a {
     }
     .about h1{
         font-size: 30px;
-    }
-    .about img{
-        border-radius: 100%;
     }
     .panel-list{
         padding-left: 0px;

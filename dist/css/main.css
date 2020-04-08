@@ -342,7 +342,7 @@ nav a {
 }
 
 .sample5 {
-    background-image: url("../Images/man-standing-while-singing-2067677.jpg");
+    background-image: url("../Images/flying-white-drone-2100075.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -437,7 +437,8 @@ nav a {
 }
 
 .yes-display {
-    display: block !important;
+    display: flex !important;
+    justify-content: center;
 }
 
 .no-display {
@@ -567,6 +568,11 @@ nav a {
     -webkit-text-fill-color: var(--dark);
 }
 
+.bluespan {
+    -webkit-text-stroke: 0px !important;
+    -webkit-text-fill-color: var(--blue) !important;
+}
+
 .form-field {
     display: flex;
     flex-direction: column;
@@ -622,6 +628,30 @@ nav a {
 .form-field a:hover {
     background-size: 90% 10px;
 }
+
+/* Footer */
+footer {
+    height: 70px;
+    width: 100%;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.socials img {
+    height: 30px;
+    margin-right: 5px;
+}
+
+footer img {
+    height: 30px;
+}
+
+
+
 
 
 /* media queries */
@@ -704,6 +734,29 @@ nav a {
     .works {
         grid-template-columns: 0.5fr 0.5fr;
     }
+
+    .contact-container {
+        width: 87%;
+        margin-bottom: 20px;
+    }
+    footer{
+        flex-wrap: wrap-reverse;
+        flex-direction: column;
+        height: auto;
+    }
+    .contact{
+        height: auto;
+    }
+    .socials{
+        margin-top: 15px;
+    }
+    footer a{
+        margin-bottom: 15px;
+    }
+    .panel-list{
+        justify-content: center;
+    }
+   
 }
 
 

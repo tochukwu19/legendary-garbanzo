@@ -736,27 +736,33 @@ footer img {
     }
 
     .contact-container {
-        width: 87%;
-        margin-bottom: 20px;
+        width: 82%;
+        margin-bottom: 50px;
+        margin-top: 20px;
     }
-    footer{
+
+    footer {
         flex-wrap: wrap-reverse;
         flex-direction: column;
         height: auto;
     }
-    .contact{
+
+    .contact {
         height: auto;
     }
-    .socials{
+
+    .socials {
         margin-top: 15px;
     }
-    footer a{
+
+    footer a {
         margin-bottom: 15px;
     }
-    .panel-list{
+
+    .panel-list {
         justify-content: center;
     }
-   
+
 }
 
 

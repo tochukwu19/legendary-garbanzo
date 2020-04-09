@@ -120,3 +120,22 @@ const pause3 = e => {
 }
 
 vid3.addEventListener("click", pause3)
+
+
+
+// Hamburger JS
+const ham = document.querySelector(".hamburger");
+const ham1 = document.querySelector(".ham1");
+const ham2 = document.querySelector(".ham2");
+const ham3 = document.querySelector(".ham3");
+const navbar = document.querySelector(".Mmenu")
+
+
+const menuOpen = e => {
+    ham1.classList.toggle("ham-tilt-right");
+    ham2.classList.toggle("ham-no-show");
+    ham3.classList.toggle("ham-tilt-left");
+    navbar.classList.toggle("nav-out");
+}
+
+ham.addEventListener("click", menuOpen)

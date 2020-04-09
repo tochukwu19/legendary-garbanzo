@@ -129,7 +129,7 @@ const ham1 = document.querySelector(".ham1");
 const ham2 = document.querySelector(".ham2");
 const ham3 = document.querySelector(".ham3");
 const navbar = document.querySelector(".Mmenu");
-
+const body = document.querySelector("html")
 
 const menuOpen = e => {
     ham1.classList.toggle("ham-tilt-right");
@@ -137,6 +137,7 @@ const menuOpen = e => {
     ham3.classList.toggle("ham-tilt-left");
     navbar.classList.toggle("nav-out");
     navbar.classList.toggle("MMmenu")
+    body.classList.toggle("no-scroll")
 }
 
 ham.addEventListener("click", menuOpen)

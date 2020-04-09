@@ -62,3 +62,61 @@ function panelList3Fn() {
     panelList2.classList.remove("active1");
     panelList3.classList.add("active1");
 }
+
+
+const playbtn = document.querySelector(".playbtn");
+const vid1 = document.querySelector(".workvid1");
+const playbtn2 = document.querySelector(".playbtn1");
+const vid2 = document.querySelector(".workvid2");
+const playbtn3 = document.querySelector(".playbtn2");
+const vid3 = document.querySelector(".workvid3");
+
+const play = e => {
+    vid1.play()
+    playbtn.classList.add("fadeplay")
+    console.log("play")
+}
+
+playbtn.addEventListener("click", play)
+
+const pause = e => {
+    vid1.pause()
+    playbtn.classList.remove("fadeplay")
+    console.log("pause")
+}
+
+vid1.addEventListener("click", pause)
+
+// 2nd video
+const play2 = e => {
+    vid2.play()
+    playbtn2.classList.add("fadeplay")
+    console.log("play")
+}
+
+playbtn2.addEventListener("click", play2)
+
+const pause2 = e => {
+    vid2.pause()
+    playbtn2.classList.remove("fadeplay")
+    console.log("pause")
+}
+
+vid2.addEventListener("click", pause2)
+
+
+const play3 = e => {
+    vid3.play()
+    playbtn3.classList.add("fadeplay")
+    console.log("play")
+}
+
+playbtn3.addEventListener("click", play3)
+
+const pause3 = e => {
+    vid3.pause()
+    playbtn3.classList.remove("fadeplay")
+    console.log("pause")
+}
+
+vid3.addEventListener("click", pause3)

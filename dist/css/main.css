@@ -537,9 +537,50 @@ nav a {
     grid-template-rows: auto;
 }
 
-.works img {
+.works img,
+.works video {
     height: 100%;
     width: 100%;
+}
+
+.v1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playbtn{
+    background-image: url("../Images/play.svg");
+    background-repeat:no-repeat;
+    width:10%;
+    height:10%;
+    position:absolute;
+    background-size:contain;
+    background-position: center;
+}
+
+.playbtn1{
+    background-image: url("../Images/play.svg");
+    background-repeat:no-repeat;
+    width:10%;
+    height:10%;
+    position:absolute;
+    background-size:contain;
+    background-position: center;
+}
+
+.playbtn2{
+    background-image: url("../Images/play.svg");
+    background-repeat:no-repeat;
+    width:10%;
+    height:10%;
+    position:absolute;
+    background-size:contain;
+    background-position: center;
+}
+
+.fadeplay{
+    display: none;
 }
 
 /* Contact */

@@ -487,6 +487,7 @@ nav a {
     background-size: 0% 10px;
     transition: background-size .3s;
     font-weight: bold;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -497,6 +498,7 @@ nav a {
 
 .about-right p {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .about h1 {
@@ -505,7 +507,6 @@ nav a {
 
 .yes-display {
     display: flex !important;
-    justify-content: center;
 }
 
 .no-display {
@@ -528,6 +529,8 @@ nav a {
 
 .aboutC {
     height: 300px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
@@ -681,12 +684,12 @@ nav a {
     -webkit-text-fill-color: var(--blue) !important;
 }
 
-.form-field {
+form {
     display: flex;
     flex-direction: column;
 }
 
-.form-field input {
+form input {
     border: 1px solid var(--blue);
     color: #fff;
     padding: 15px;
@@ -697,7 +700,7 @@ nav a {
 
 }
 
-.form-field textarea {
+form textarea {
     border: 1px solid var(--blue);
     color: #fff;
     font-family: "Quicksand", sans-serif;
@@ -707,11 +710,11 @@ nav a {
     height: 150px;
 }
 
-.form-field input::placeholder {
+form input::placeholder {
     color: #fff;
 }
 
-.form-field textarea::placeholder {
+form textarea::placeholder {
     color: #fff;
 
 }

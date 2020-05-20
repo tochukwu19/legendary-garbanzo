@@ -724,7 +724,7 @@ form textarea::placeholder {
     flex-direction: column;
 }
 
-.form-field a {
+.submit{
     text-decoration: none;
     color: #fff;
     width: fit-content;
@@ -734,9 +734,10 @@ form textarea::placeholder {
     background-size: 0% 10px;
     transition: background-size .3s;
     cursor: pointer;
+    border: hidden;
 }
 
-.form-field a:hover {
+.submit:hover {
     background-size: 90% 10px;
 }
 

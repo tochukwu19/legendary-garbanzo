@@ -82,7 +82,7 @@ html {
     flex-direction: column;
 }
 
-.no-scroll{
+.no-scroll {
     overflow-y: hidden;
 }
 
@@ -287,142 +287,14 @@ nav a {
     top: -10px;
 }
 
-.sample-works {
-    height: 300px;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
+.scroll-text p {
+    font-size: 18px;
+    font-family: inherit;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 80px;
+    left: 0;
 }
-
-.samples {
-    height: inherit;
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.sample1 {
-    background-image: url("../Images/two-person-carrying-black-inflatable-pool-float-on-brown-1020016.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 20%;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    flex-direction: column;
-
-}
-
-.sample1 p,
-.sample2 p,
-.sample3 p,
-.sample4 p,
-.sample5 p {
-    font-family: 'Montserrat',
-        sans-serif;
-    font-size: 22px;
-    font-weight: lighter;
-}
-
-.sample1 a,
-.sample2 a,
-.sample3 a,
-.sample4 a,
-.sample5 a {
-    color: #fff;
-    text-decoration: none;
-    text-align: left;
-    background-image: linear-gradient(var(--blue), var(--blue));
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 10px;
-    transition: background-size .3s;
-}
-
-
-.sample1 a:hover,
-.sample1 a:focus,
-.sample2 a:hover,
-.sample2 a:focus,
-.sample3 a:hover,
-.sample3 a:focus,
-.sample4 a:hover,
-.sample4 a:focus,
-.sample5 a:hover,
-.sample5 a:focus {
-    background-size: 90% 10px;
-}
-
-
-.blue {
-    color: var(--blue);
-}
-
-.sample2 {
-    background-image: url("../Images/flying-white-drone-2100075.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 20%;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    flex-direction: column;
-
-}
-
-.sample3 {
-    background-image: url("../Images/man-and-woman-kissing-948185.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 20%;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    flex-direction: column;
-
-}
-
-.sample4 {
-    background-image: url("../Images/green-trees-under-blue-and-orange-sky-during-sunset-1107717.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 20%;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    flex-direction: column;
-
-}
-
-.sample5 {
-    background-image: url("../Images/flying-white-drone-2100075.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 20%;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    flex-direction: column;
-
-}
-
 
 /* About */
 
@@ -613,45 +485,65 @@ nav a {
     width: 100%;
 }
 
-.v1 {
+.work {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.playbtn {
-    background-image: url("../Images/play.svg");
-    background-repeat: no-repeat;
-    width: 10%;
-    height: 10%;
+.overlay {
     position: absolute;
-    background-size: contain;
-    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.4;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.playbtn1 {
-    background-image: url("../Images/play.svg");
+.overlay h2{
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 27px;
+    text-align: center;
+}
+
+.overlay a {
+    margin-left: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(var(--blue), var(--blue));
+    background-position: 0% 100%;
     background-repeat: no-repeat;
-    width: 10%;
-    height: 10%;
-    position: absolute;
-    background-size: contain;
-    background-position: center;
+    background-size: 10% 10px;
+    transition: background-size .3s;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.playbtn2 {
-    background-image: url("../Images/play.svg");
-    background-repeat: no-repeat;
-    width: 10%;
-    height: 10%;
-    position: absolute;
-    background-size: contain;
-    background-position: center;
+.overlay a:hover {
+    background-size: 90% 10px;
 }
 
-.fadeplay {
-    display: none;
+.work .overlay,
+.work:hover .works img {
+    opacity: 0;
+    transition: ease-in-out 350ms;
+
 }
+
+
+.work:hover .overlay {
+    opacity: 1;
+    transition: ease-in-out 350ms;
+    z-index: 5;
+}
+
+
 
 /* Contact */
 .contact {
@@ -724,7 +616,7 @@ form textarea::placeholder {
     flex-direction: column;
 }
 
-.submit{
+.submit {
     text-decoration: none;
     color: #fff;
     width: fit-content;
@@ -828,7 +720,7 @@ footer img {
         height: auto;
     }
 
-    .menus a{
+    .menus a {
         font-size: 22px;
     }
 
@@ -893,6 +785,10 @@ footer img {
     }
 
     .sample-works {
+        display: none;
+    }
+
+    .scroll-text p {
         display: none;
     }
 }

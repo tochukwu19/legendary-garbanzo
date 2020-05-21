@@ -141,3 +141,19 @@ const menuOpen = e => {
 }
 
 ham.addEventListener("click", menuOpen)
+
+
+// Hamburger canceel out when clicked on
+const buttons = document.querySelectorAll(".underline-magic")
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        console.log("forEach worked");
+        ham1.classList.remove("ham-tilt-right");
+        ham2.classList.remove("ham-no-show");
+        ham3.classList.remove("ham-tilt-left");
+        navbar.classList.remove("nav-out");
+        body.classList.remove("no-scroll");
+        navbar.classList.remove("MMmenu");
+    });
+});

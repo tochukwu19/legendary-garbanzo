@@ -505,9 +505,9 @@ nav a {
     align-items: center;
 }
 
-.overlay h2{
+.overlay h2 {
     font-family: 'Montserrat',
-    sans-serif;
+        sans-serif;
     font-size: 27px;
     text-align: center;
 }
@@ -744,9 +744,9 @@ footer img {
         justify-content: space-between;
     }
 
-    .works {
+    /* .works {
         grid-template-columns: 0.5fr 0.5fr;
-    }
+    } */
 
     .contact-container {
         width: 82%;
@@ -778,6 +778,13 @@ footer img {
 
 }
 
+.clients H2 {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 22px;
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-fill-color: transparent;
+}
 
 @media only screen and (max-width: 800px) {
     .hero-works {

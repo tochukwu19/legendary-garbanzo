@@ -412,7 +412,7 @@ nav a {
 .clients {
     background-color: var(--dark);
     width: 100%;
-    height: 100vh;
+    height: 400px;
 }
 
 .client-container {
@@ -462,7 +462,8 @@ nav a {
 }
 
 .clients img {
-    height: 80px;
+    height: 70px;
+    margin-right: 10px;
 }
 
 
